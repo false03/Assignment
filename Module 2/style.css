@@ -1,0 +1,80 @@
+header{
+    text-align: center;
+    margin-bottom: 100px;
+    padding:0 15px;
+}
+
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column{
+    flex: 1;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px 5px 5px 10px;
+    background-color: rgb(174, 174, 174);
+    border-style: solid;
+    border-color: black;
+}
+
+#p1{
+    
+    font-size: 18px;
+    background-color: rgb(214, 132, 132);
+    padding-left: 20px;
+    padding-right: 24px;
+}
+
+#p2{
+    font-size: 18px;
+    padding-right: 0px;
+    background-color: red;
+    color:white;
+    padding-left: 30px;
+}
+
+#p3{
+    font-size: 18px;
+    padding-right: 8px;
+    background-color: rgb(248, 236, 130);
+    padding-left: 26px;
+}
+
+.food{
+    float: right;
+    width: 60px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    left: 8px;
+    bottom: 36px;
+}
+
+@media screen and (max-width: 960px) {
+  .columns .column {
+    margin-bottom: 10px;
+    flex-basis: 40%
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 6px 0 0 10px;
+  }
+  .columns .column:nth-last-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .columns .column{
+    flex-basis: 100%;
+    margin: 0 0 8px 0;
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 0 0 0 0;
+}
+}
